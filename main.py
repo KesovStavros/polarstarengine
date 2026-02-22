@@ -261,6 +261,10 @@ while run:
                             nvars[o["args"]["v1"]]=nvars[o["args"]["v2"]]
                     if o["args"]["ctype"]=="-":
                         nvars[o["args"]["v1"]]=nvars[o["args"]["v1"]]-nvars[o["args"]["v2"]]
+                    if o["args"]["ctype"]=="*":
+                        nvars[o["args"]["v1"]]=nvars[o["args"]["v1"]]*nvars[o["args"]["v2"]]
+                    if o["args"]["ctype"]=="/":
+                        nvars[o["args"]["v1"]]=nvars[o["args"]["v1"]]/nvars[o["args"]["v2"]]
                 if o["args"]["trigtype"]=="animation":
                     asys.start_anim(o["args"]["anim"])
                     #pygame.draw.rect(frame,(255,255,0),(int(o["args"]["x1"]),int(o["args"]["x2"]),int(o["args"]["1"]),int(o["args"]["x2"])))
@@ -454,6 +458,10 @@ while run:
                             nvars[o["args"]["v1"]]=nvars[o["args"]["v2"]]
                     if o["args"]["ctype"]=="-":
                         nvars[o["args"]["v1"]]=nvars[o["args"]["v1"]]-nvars[o["args"]["v2"]]
+                    if o["args"]["ctype"]=="*":
+                        nvars[o["args"]["v1"]]=nvars[o["args"]["v1"]]*nvars[o["args"]["v2"]]
+                    if o["args"]["ctype"]=="/":
+                        nvars[o["args"]["v1"]]=nvars[o["args"]["v1"]]/nvars[o["args"]["v2"]]
                 if o["args"]["trigtype"]=="animation":
                     asys.start_anim(o["args"]["anim"])
                 elif o["args"]["trigtype"]=="dialog":
