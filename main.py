@@ -4,6 +4,8 @@ from engine import dialogs
 import pygame
 pygame.init()
 frame = pygame.display.set_mode((500,500))
+pygame.display.set_caption("polarstar 2d")
+pygame.display.set_icon(pygame.image.load("logo.png"))
 asys=animator.animator()
 objects=[]
 collisions=[]
