@@ -307,6 +307,11 @@ while run:
                     loaddialogs(o["args"]["map"]+".dialogs")
                 except:
                     aaaaaaaaaaa=0
+                try:
+                    if o["args"]["save"]=="True":
+                        with open("save.txt","w") as sf:
+                            sf.writelines([o["args"]["map"])
+                except:drtrjdjjs=0
         if o["type"]=="image":
             wasanim=False
             for a in asys.anims:
@@ -380,6 +385,11 @@ while run:
                     loadanims(o["args"]["map"]+".anims")
                     loaddialogs(o["args"]["map"]+".dialogs")
                 except:aajajajajajaaj=0
+                try:
+                    if o["args"]["save"]=="True":
+                        with open("save.txt","w") as sf:
+                            sf.writelines([o["args"]["map"])
+                except:drtrjdjjs=0
         if o["type"]=="trigger":
             if devmode==True:
                 pygame.draw.rect(frame,(255,0,0),(int(o["args"]["x1"]),int(o["args"]["x2"])-int(o["args"]["x1"]),int(o["args"]["y1"]),int(o["args"]["y2"])-int(o["args"]["y1"])),10)
