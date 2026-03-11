@@ -310,7 +310,7 @@ while run:
                 try:
                     if o["args"]["save"]=="True":
                         with open("save.txt","w") as sf:
-                            sf.writelines([o["args"]["map"])
+                            sf.writelines([o["args"]["map"]])
                 except:drtrjdjjs=0
         if o["type"]=="image":
             wasanim=False
@@ -388,7 +388,7 @@ while run:
                 try:
                     if o["args"]["save"]=="True":
                         with open("save.txt","w") as sf:
-                            sf.writelines([o["args"]["map"])
+                            sf.writelines([o["args"]["map"]])
                 except:drtrjdjjs=0
         if o["type"]=="trigger":
             if devmode==True:
